@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Railway Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Railway Theme CSS */
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('train-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            min-height: 100vh;
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .menu-btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            font-size: 18px;
+            background-color: #0078D7;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .menu-btn:hover {
+            background-color: #005a9e;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <h1>🚆 Railway Reservation System</h1>
+            <a href="dashboard.php" class="menu-btn">Dashboard</a>
+            <a href="reservation.html" class="menu-btn">Make a Reservation</a>
+            <a href="trains.php" class="menu-btn">Train List</a>
+        </div>
+        <footer>
+            &copy; 2025 Indian Railway Reservation System
+        </footer>
+    </div>
+</body>
+</html>

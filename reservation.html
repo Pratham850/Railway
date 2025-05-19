@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make a Reservation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .dashboard-btn {
+            display: block;
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 20px auto 0;
+            width: 200px;
+            transition: background-color 0.3s ease;
+        }
+
+        .dashboard-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>🚆 Book Your Train Ticket</h2>
+        <form action="add_reservation.php" method="POST">
+
+            <label for="train_id">Select Train:</label>
+            <select name="train_id" id="train_id" required>
+                <option value="">-- Select Train --</option>
+                <option value="101">101 - Express Line</option>
+                <option value="102">102 - City Fast</option>
+                <option value="103">103 - Night Rider</option>
+            </select>
+
+            <label for="seat_id">Seat Class:</label>
+            <select name="seat_id" id="seat_id" required>
+                <option value="">-- Select Seat Class --</option>
+                <option value="1">1 - First Class</option>
+                <option value="2">2 - Second Class</option>
+                <option value="3">3 - Sleeper</option>
+            </select>
+
+            <label for="passenger_name">Passenger Name:</label>
+            <input type="text" name="passenger_name" id="passenger_name" placeholder="Full Name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" placeholder="e.g., 30" min="0" required>
+
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender" required>
+                <option value="">-- Select Gender --</option>
+                <option value="Male">M</option>
+                <option value="Female">F</option>
+            </select>
+
+            <label for="booking_date">Travel Date:</label>
+            <input type="date" name="booking_date" id="booking_date" required>
+
+            <input type="submit" value="Book Now">
+        </form>
+
+        <!-- Go to Dashboard Button -->
+        <a href="dashboard.php" class="dashboard-btn">Go to Dashboard</a>
+    </div>
+</body>
+</html>
